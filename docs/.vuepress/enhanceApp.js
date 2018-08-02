@@ -1,18 +1,11 @@
 const Admin = () => import("./components/Admin");
 
-export default ({ Vue, options, router, siteData }) => {
-    siteData.pages.push({
-        key: "admin",
-        path: "/admin",
-        title: "Admin",
-        frontmatter: {}
-    })
-
+export default ({ Vue, options, router }) => {
     router.addRoutes([
         {
             path: "/admin",
+            redirect: "/admin.html",
             component: Admin
         }
     ]);
-    console.log(siteData.pages);
 };

@@ -17,6 +17,10 @@ export default {
       "https://identity.netlify.com/v1/netlify-identity-widget.js"
     );
     document.head.appendChild(identityWidget);
+
+    if (webpackHotUpdate) {
+      console.log("In development mode");
+    }
   }
 };
 </script>
