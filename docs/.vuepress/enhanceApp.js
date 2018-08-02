@@ -13,5 +13,6 @@ export default ({ Vue, options, router, siteData }) => {
         title: "Admin",
         frontmatte: {}
     })
+    console.log("this is enhanced");
     console.log(siteData.pages);
 };
