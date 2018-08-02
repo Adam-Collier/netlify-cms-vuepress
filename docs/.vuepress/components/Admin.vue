@@ -8,12 +8,12 @@
 // import netlifyIndentityWidget from "netlify-identity-widget";
 
 export default {
-  mounted() {
+  created() {
     // window.netlifyIndentityWidget = netlifyIndentityWidget;
     // netlifyIndentityWidget.init();
 
     let netlifyCMS = document.createElement("script");
-    identityWidget.setAttribute(
+    netlifyCMS.setAttribute(
       "src",
       "https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"
     );
