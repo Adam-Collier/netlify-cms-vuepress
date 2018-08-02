@@ -1,0 +1,20 @@
+{
+  "name": "vuepress-cms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^0.13.0"
+  },
+  "dependencies": {
+    "netlify-cms": "^2.0.8"
+  }
+}
