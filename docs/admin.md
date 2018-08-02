@@ -1,1 +1,3 @@
-<Admin/>
+<ClientOnly>
+  <Admin/>
+</ClientOnly>

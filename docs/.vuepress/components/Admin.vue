@@ -8,7 +8,7 @@
 // import netlifyIndentityWidget from "netlify-identity-widget";
 
 export default {
-  mounted() {
+  created() {
     // window.netlifyIndentityWidget = netlifyIndentityWidget;
     // netlifyIndentityWidget.init();
 
