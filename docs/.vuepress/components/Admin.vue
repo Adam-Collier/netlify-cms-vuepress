@@ -25,7 +25,8 @@ export default {
       "https://identity.netlify.com/v1/netlify-identity-widget.js"
     );
     document.head.appendChild(identityWidget);
-
+  },
+  mounted() {
     let styles = document.styleSheets[0].href.split("/");
     styles = styles[styles.length - 1];
     CMS.registerPreviewStyle(`/assets/css/${styles}`);
