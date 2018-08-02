@@ -26,8 +26,11 @@ export default {
     );
     document.head.appendChild(identityWidget);
 
-    if (webpackHotUpdate) {
+    if (!webpackHotUpdate) {
       console.log("In development mode");
+      let styles = document.styleSheets[0].href.split("/");
+      styles = styles[styles.length - 1];
+      CMS.registerPreviewStyle(`/assets/css/${styles}`);
     }
   }
 };
