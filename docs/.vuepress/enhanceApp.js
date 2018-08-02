@@ -1,4 +1,4 @@
-const Admin = () => import("./components/Admin");
+const Admin = () => import("./Admin");
 
 export default ({ Vue, options, router }) => {
     router.addRoutes([
