@@ -32,3 +32,8 @@ export default {
   }
 };
 </script>
+
+<style lang="styl">
+.page, .navbar 
+    display: none;
+</style>
