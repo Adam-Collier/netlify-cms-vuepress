@@ -9,7 +9,7 @@ fs.readdir('./docs/.vuepress/dist/assets/css', (err, files) => {
         let configIndex = fs.readFileSync(adminPath, 'utf-8')
 
         var { document } = new JSDOM(configIndex).window;
-        document.querySelector('script').insertAdjacentHTML("afterend", cssScript);
+        document.querySelector('body').insertAdjacentHTML("beforeend", cssScript);
 
         let adminHTML = document.documentElement.outerHTML;
 
