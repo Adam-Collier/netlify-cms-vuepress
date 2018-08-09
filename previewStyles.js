@@ -17,4 +17,6 @@ fs.readdir('./docs/.vuepress/dist/assets/css', (err, files) => {
 
         console.log("Successfully added CSS")
     }
+
+    console.log("the styles script has ran");
 })
