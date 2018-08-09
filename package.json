@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "docs:build": "vuepress build docs && node previewStyles",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,6 +15,7 @@
     "vuepress": "^0.13.0"
   },
   "dependencies": {
+    "jsdom": "^11.12.0",
     "netlify-cms": "^2.0.8"
   }
 }
