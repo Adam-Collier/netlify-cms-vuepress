@@ -7,7 +7,7 @@ fs.readdir('./docs/.vuepress/dist/assets/css', (err, files) => {
 
     if (files.length) {
         let cssScript = `<script>CMS.registerPreviewStyle("/assets/css/${files[0]}")</script>`;
-        let adminPath = './docs/.vuepress/public/admin/index.html'
+        let adminPath = './docs/.vuepress/dist/admin/index.html'
         let configIndex = fs.readFileSync(adminPath, 'utf-8')
 
         console.log(configIndex);
@@ -17,7 +17,7 @@ fs.readdir('./docs/.vuepress/dist/assets/css', (err, files) => {
 
         let adminHTML = document.documentElement.outerHTML;
 
-        console.log(adminHTML);
+        console.log(adminHTML)
 
         fs.writeFileSync(adminPath, adminHTML, "utf-8");
 
